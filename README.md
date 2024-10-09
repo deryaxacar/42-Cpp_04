@@ -19,7 +19,7 @@ C++ dilinde nesne yönelimli programlamanın temel kavramlarını kapsamaktadır
 <a name="virtual-sanal-fonksiyonlar"></a>
 ## Virtual (Sanal Fonksiyonlar)
 
-virtual, C++ dilinde sanal fonksiyonlar oluşturmak için kullanılan bir anahtar kelimedir. Sanal fonksiyonlar, üst sınıf türündeki bir nesnenin alt sınıflarının fonksiyonlarını dinamik olarak çağırabilmesini sağlar. Bu sayede, aynı üst sınıftan türetilmiş nesneler farklı davranışlar sergileyebilir.
+Virtual, C++ dilinde sanal fonksiyonlar oluşturmak için kullanılan bir anahtar kelimedir. Sanal fonksiyonlar, üst sınıf türündeki bir nesnenin alt sınıflarının fonksiyonlarını dinamik olarak çağırabilmesini sağlar. Bu sayede, aynı üst sınıftan türetilmiş nesneler farklı davranışlar sergileyebilir.
 
 **örnek:**
 
