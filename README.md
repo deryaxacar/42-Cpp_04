@@ -103,7 +103,15 @@ Sanal fonksiyonlar, alt tür polymorphism'i sağlayarak üst sınıf türündeki
 - **Shallow Copy (Yüzeysel Kopya):** Mevcut nesnenin bellek alanının bir kopyasını oluşturur, ancak referans türündeki verileri doğrudan kopyalar. Bu nedenle, iki nesne birbirini etkileyebilir.
 - **Deep Copy (Derin Kopya):** Mevcut nesnenin tamamen bağımsız bir kopyasını oluşturur. Bellek alanı ve veriler ayrı ayrı kopyalanır; bu nedenle değişiklikler birbirini etkilemez.
 
-**örnek**
+---
+
+<div align= "center">
+  <img src="https://i.hizliresim.com/74delye.PNG?_gl=1*10iwxpq*_ga*MTA0MDAwNjI5OC4xNzI4NzQ2ODgz*_ga_M9ZRXYS2YN*MTcyODc0Njg4Mi4xLjEuMTcyODc0NzEyMi40OS4wLjA." alt="img" width="670" height="350">
+</div>
+
+---
+
+**örnek kod**
 
 ```cpp
 #include <iostream>
