@@ -11,6 +11,7 @@ C++ dilinde nesne yönelimli programlamanın temel kavramlarını kapsamaktadır
 - [Virtual (Sanal Fonksiyonlar)](#virtual-sanal-fonksiyonlar)
 - [Abstract Class (Soyut Sınıflar)](#abstract-class-soyut-sınıflar)
 - [Virtual ve Subtype Polymorphism (Sanal ve Alt Tür Polymorphism)](#virtual-ve-subtype-polymorphism-sanal-ve-alt-tür-polymorphism)
+- [Function Override (Fonksiyon Geçersiz Kılma)](#function-override-fonksiyon-geçersiz-kılma)
 - [Shallow Copy ve Deep Copy](#shallow-copy-ve-deep-copy)
 - [Interfaces (Arayüzler)](#interfaces-arayüzler)
 
@@ -143,6 +144,19 @@ int main() {
     return 0;
 }
 ```
+
+---
+<a name="function-override-fonksiyon-geçersiz-kılma"></a>
+## Function Override (Fonksiyon Geçersiz Kılma)
+
+C++ dilinde "function override" (fonksiyon geçersiz kılma), bir alt sınıfın üst sınıfta tanımlanan sanal bir fonksiyonu yeniden tanımlaması anlamına gelir. Bu, polimorfizm ve nesne yönelimli programlama için temel bir özelliktir.
+
+**Temel Kurallar**
+- **Sanal Fonksiyon:** Geçersiz kılınacak fonksiyon, üst sınıfta virtual anahtar kelimesi ile tanımlanmalıdır.
+- **Aynı İmza:** Alt sınıfta tanımlanan fonksiyonun, üst sınıftaki ile aynı isim, dönüş tipi ve parametre listesine sahip olması gerekir.
+- **override Anahtar Kelimesi:** C++11 ile birlikte override anahtar kelimesi kullanarak, fonksiyonun gerçekten geçersiz kılınıp kılınmadığını belirtmek iyi bir uygulamadır.
+
+---
 
 <a name="interfaces-arayüzler"></a>
 ## Interfaces (Arayüzler)
