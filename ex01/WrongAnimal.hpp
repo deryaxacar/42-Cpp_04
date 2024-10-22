@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:44:29 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:50:11 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/18 14:14:39 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class	WrongAnimal
 		WrongAnimal(std::string type);
 		WrongAnimal(const	WrongAnimal& copy);
 		virtual ~WrongAnimal();
-		WrongAnimal &operator =(const	WrongAnimal& copy);
+		WrongAnimal &operator=(const	WrongAnimal& copy);
 		void makeSound() const;
 		std::string getType() const;
 };

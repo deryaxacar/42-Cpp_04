@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:43:01 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 17:08:11 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/18 14:13:56 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ class Cat : public Animal
 		Cat(const Cat& copy);
 		~Cat();
 		Cat &operator=(const Cat &copy);
-
 		void makeSound() const;
 		Brain *getBrain() const;
 };

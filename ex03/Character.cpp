@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:16:39 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 14:16:41 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/21 16:27:39 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,14 @@ void Character::equip(AMateria *m)
     int i = 0;
     
     if (!m) {
-        std::cout << "Materia is empty\n";
+        std::cout << "Materia is empty" << std::endl;
         return ;
     }
     while (this->inventory[i] != 0) {
         i++;
     }
     if (i > 3) {
-        std::cout << "There is no enough space for Materia\n";
+        std::cout << "There is no enough space for Materia" << std::endl;
         return ;
     }
     this->inventory[i] = m;
@@ -71,25 +71,26 @@ void Character::equip(AMateria *m)
 void Character::unequip(int idx)
 {
     if (idx < 0 || idx > 3) {
-        std::cout << "Index out of range\n";
+        std::cout << "Index out of range" << std::endl;
         return ;
     }
     if (this->inventory[idx] == 0) {
-        std::cout << "There is no Materia to unequip\n";
+        std::cout << "There is no Materia to unequip" << std::endl;
         return ;
     }
+    
     this->inventory[idx] = 0;
 }
 
 void Character::use(int idx, ICharacter& target)
 {
     if (idx < 0 || idx > 3) {
-        std::cout << "Index out of range\n";
+        std::cout << "Index out of range" << std::endl;
         return ;
     }
     if (!this->inventory[idx]) {
-        std::cout << "Nothing found the use\n";
-        return ; 
+        std::cout << "Nothing found the use" << std::endl;
+        return; 
     }
     this->inventory[idx]->use(target);
 }

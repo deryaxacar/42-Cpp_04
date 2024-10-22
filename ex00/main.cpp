@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:28:43 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:41:44 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/18 13:56:04 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 
 int main()
 {
+	Animal *animal = new Dog();
+	animal->makeSound();
+	delete animal;
 	{
 		const Animal* meta = new Animal();
 		const Animal* j = new Dog();

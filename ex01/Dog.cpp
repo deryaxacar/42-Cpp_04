@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:43:15 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 16:31:38 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/18 13:49:56 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,32 @@
 Dog::Dog()
 {
 	this->brain = new Brain();
-	std::cout<<"Dog: Constructor called.\n";
+	std::cout<<"Dog: Constructor called." << std::endl;
 	this->type = "Dog";
 }
 
 Dog::Dog(const Dog& copy)
 {
-	std::cout << "Dog: Copy Constructor called.\n";
+	std::cout << "Dog: Copy Constructor called." << std::endl;
 	this->brain = new Brain();
 	*this = copy;
 }
 
 Dog::~Dog()
 {
-	std::cout << "Dog : Destructor called.\n";
+	std::cout << "Dog : Destructor called." << std::endl;
 	delete brain;
 }
 
-Dog& Dog ::operator=(const Dog& copy)
+Dog& Dog::operator=(const Dog& copy)
 {
+	delete brain;
 	Animal::type = copy.type;
     *this->brain = *copy.brain;
 	return(*this);
 }
 
-void Dog::makeSound ()const
+void Dog::makeSound() const
 {
 	 std::cout << "Hav Hav" << std::endl;
 }

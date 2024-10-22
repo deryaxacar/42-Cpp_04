@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:42:35 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:52:38 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/18 13:33:12 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Brain::Brain()
 {
 	std::cout << "Brain constructor called" << std::endl;
 	for (int i = 0; i < 100; ++i) {
-		ideas[i] = "some animalistic ideas ";
+		ideas[i] = "some animalistic ideas";
 	}
 }
 
@@ -33,7 +33,7 @@ Brain::Brain(const Brain& copy)
 
 Brain &Brain::operator=(const Brain& copy) 
 {
-	for (size_t i = 0; i < copy.ideas->size(); i++)
+	for (size_t i = 0; i < 100; i++)
 	{
 		this->ideas[i] = copy.ideas[i];
 	}

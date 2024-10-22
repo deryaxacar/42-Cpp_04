@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:44:20 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:50:27 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/17 14:20:44 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,33 @@
 
 WrongAnimal::WrongAnimal()
 {
-	std::cout << "WrongAnimal : Constructor called.\n";
+	std::cout << "WrongAnimal : Constructor called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(std::string type)
 {
 	this->type = type;
-	std::cout << "WrongAnimal : Constructor called.\n";
+	std::cout << "WrongAnimal : Constructor called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& copy)
 {
-	std::cout << "WrongAnimal : Copy Constructor called.\n";
+	std::cout << "WrongAnimal : Copy Constructor called." << std::endl;
 	*this = copy;
 }
 
 WrongAnimal::~WrongAnimal()
 {
-	std::cout << "WrongAnimal destructor called\n";
+	std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
-WrongAnimal& WrongAnimal ::operator =(const WrongAnimal& copy)
+WrongAnimal& WrongAnimal::operator=(const WrongAnimal& copy)
 {
 	this->type = copy.type;
 	return(*this);
 }
 
-void WrongAnimal::makeSound () const
+void WrongAnimal::makeSound() const
 {
 	 std::cout << "regular WrongAnimal sound" << std::endl;
 }

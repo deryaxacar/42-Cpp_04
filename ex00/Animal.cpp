@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:29:08 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:47:33 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/21 16:09:33 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 Animal::Animal()
 {
-	std::cout << "Animal : Constructor called.\n";
+	std::cout << "Animal : Constructor called." << std::endl;
 }
 
 Animal::Animal(std::string type):type(type)
 {
-	std::cout << "Animal : Constructor called.\n";
+	std::cout << "Animal : Constructor called." << std::endl;
 }
 
 Animal::Animal(const Animal& copy)
 {
-	std::cout << "Animal : Copy Constructor called.\n";
+	std::cout << "Animal : Copy Constructor called." << std::endl;
 	*this = copy;
 }
 
 Animal::~Animal()
 {
-	std::cout << "Default Destructor called.\n";
+	std::cout << "Default Destructor called." << std::endl;
 }
 
-Animal& Animal ::operator =(const Animal& copy)
+Animal& Animal ::operator=(const Animal& copy)
 {
 	if(this == &copy)
         return(*this);
@@ -41,9 +41,9 @@ Animal& Animal ::operator =(const Animal& copy)
 	return(*this);
 }
 
-void Animal::makeSound () const
+void Animal::makeSound() const
 {
-	 std::cout << "regular animal sound" << std::endl;
+	std::cout << "regular animal sound" << std::endl;
 }
 
 std::string Animal::getType() const

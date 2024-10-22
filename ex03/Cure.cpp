@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:17:33 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 14:17:34 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/17 14:28:08 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Cure &Cure::operator=(const Cure& copy)
     return *this;
 }
 
-std::string const & Cure::getType() const 
+std::string const& Cure::getType() const 
 {
     return (this->type);
 }
@@ -41,5 +41,5 @@ Cure *Cure::clone() const
 
 void Cure::use(ICharacter& target) 
 {
-    std::cout << "* heals " <<  target.getName() << "\'s wounds *\n";
+    std::cout << "* heals " <<  target.getName() << "\'s wounds *" << std::endl;
 }

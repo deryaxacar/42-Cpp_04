@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:20:37 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 14:20:39 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/17 14:29:11 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ class MateriaSource: public IMateriaSource
         MateriaSource &operator=(const MateriaSource& copy);
         ~MateriaSource();
         void learnMateria(AMateria*);
-        AMateria* createMateria(std::string const & type);
+        AMateria* createMateria(std::string const& type);
 };

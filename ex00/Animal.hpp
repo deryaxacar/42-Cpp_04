@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:29:24 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 13:47:39 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/21 13:12:09 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal
 		Animal(std::string type);
 		Animal(const Animal& copy);
 		virtual ~Animal();
-		Animal &operator =(const Animal& copy);
+		Animal &operator=(const Animal& copy);
 		virtual void makeSound() const;
 		std::string getType() const;
 };

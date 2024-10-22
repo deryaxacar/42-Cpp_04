@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:43:58 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 18:37:17 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/21 16:10:28 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int main()
         std::cout<< "Type: "<< animals[i]->getType() << std::endl;
     }
     std::cout << "**-----------DELETE-------------------**" << std::endl;
-    for (int indx = 0; indx < Acount; indx++)
+    for (int x = 0; x < Acount; x++)
     {
-        delete animals[indx];
+        delete animals[x];
     }
     delete j;
     delete i;

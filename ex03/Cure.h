@@ -6,7 +6,7 @@
 /*   By: deryacar <deryacar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:17:49 by deryacar          #+#    #+#             */
-/*   Updated: 2024/10/16 14:17:54 by deryacar         ###   ########.fr       */
+/*   Updated: 2024/10/17 14:28:00 by deryacar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Cure: public AMateria
         Cure();
         Cure(const Cure& copy);
         Cure &operator=(const Cure& copy);
-        std::string const & getType() const;
+        std::string const& getType() const;
         Cure *clone() const;
         void use(ICharacter& target);
         ~Cure();
