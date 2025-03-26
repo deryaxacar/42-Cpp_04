@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"WrongCat.hpp"
+#include "WrongCat.hpp"
 
 WrongCat::WrongCat()
 {
-	std::cout<<"WrongCat: Constructor called." << std::endl;
+	std::cout << "WrongCat: Constructor called." << std::endl;
 	this->type = "WrongCat";
 }
 
-WrongCat::WrongCat(const WrongCat& copy)
+WrongCat::WrongCat(const WrongCat &copy) : WrongAnimal(copy)
 {
 	std::cout << "WrongCat: Copy Constructor called." << std::endl;
 	*this = copy;
@@ -29,13 +29,13 @@ WrongCat::~WrongCat()
 	std::cout << "WrongCat destructor called." << std::endl;
 }
 
-WrongCat& WrongCat::operator=(const WrongCat& copy)
+WrongCat &WrongCat::operator=(const WrongCat &copy)
 {
 	WrongAnimal::type = copy.type;
-	return(*this);
+	return (*this);
 }
 
 void WrongCat::makeSound() const
 {
-	 std::cout << "Miyavvv" << std::endl;
+	std::cout << "Miyavvv" << std::endl;
 }

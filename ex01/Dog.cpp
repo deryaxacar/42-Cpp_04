@@ -10,16 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"Dog.hpp"
+#include "Dog.hpp"
 
 Dog::Dog()
 {
 	this->brain = new Brain();
-	std::cout<<"Dog: Constructor called." << std::endl;
+	std::cout << "Dog: Constructor called." << std::endl;
 	this->type = "Dog";
 }
 
-Dog::Dog(const Dog& copy)
+Dog::Dog(const Dog &copy) : Animal(copy)
 {
 	std::cout << "Dog: Copy Constructor called." << std::endl;
 	this->brain = new Brain();
@@ -32,20 +32,20 @@ Dog::~Dog()
 	delete brain;
 }
 
-Dog& Dog::operator=(const Dog& copy)
+Dog &Dog::operator=(const Dog &copy)
 {
 	delete brain;
 	Animal::type = copy.type;
-    *this->brain = *copy.brain;
-	return(*this);
+	*this->brain = *copy.brain;
+	return (*this);
 }
 
 void Dog::makeSound() const
 {
-	 std::cout << "Hav Hav" << std::endl;
+	std::cout << "Hav Hav" << std::endl;
 }
 
-std::string  *Dog::getBrain() const
+std::string *Dog::getBrain() const
 {
 	return (this->brain->ideas);
 }

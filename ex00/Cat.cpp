@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"Cat.hpp"
+#include "Cat.hpp"
 
 Cat::Cat()
 {
-	std::cout<<"Cat : Constructor called." << std::endl;
+	std::cout << "Cat : Constructor called." << std::endl;
 	this->type = "Cat";
 }
 
-Cat::Cat(const Cat& copy)
+Cat::Cat(const Cat &copy) : Animal(copy)
 {
 	std::cout << "Cat : Copy Constructor called." << std::endl;
 	*this = copy;
@@ -29,13 +29,13 @@ Cat::~Cat()
 	std::cout << "Cat : Destructor called." << std::endl;
 }
 
-Cat& Cat::operator=(const Cat& copy)
+Cat &Cat::operator=(const Cat &copy)
 {
 	Animal::type = copy.type;
-	return(*this);
+	return (*this);
 }
 
 void Cat::makeSound() const
 {
-	 std::cout << "Miyavvv" << std::endl;
+	std::cout << "Miyavvv" << std::endl;
 }

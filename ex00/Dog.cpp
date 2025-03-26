@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"Dog.hpp"
+#include "Dog.hpp"
 
 Dog::Dog()
 {
@@ -18,7 +18,7 @@ Dog::Dog()
 	this->type = "Dog";
 }
 
-Dog::Dog(const Dog& copy)
+Dog::Dog(const Dog &copy) : Animal(copy)
 {
 	std::cout << "Dog: Copy Constructor called." << std::endl;
 	*this = copy;
@@ -29,13 +29,13 @@ Dog::~Dog()
 	std::cout << "Dog : Destructor called." << std::endl;
 }
 
-Dog& Dog::operator=(const Dog& copy)
+Dog &Dog::operator=(const Dog &copy)
 {
 	Animal::type = copy.type;
-	return(*this);
+	return (*this);
 }
 
 void Dog::makeSound() const
 {
-	 std::cout << "Hav Hav" << std::endl;
+	std::cout << "Hav Hav" << std::endl;
 }
